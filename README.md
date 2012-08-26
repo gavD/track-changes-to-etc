@@ -13,3 +13,15 @@ machine, so having some way to automatically commit these
 files at every stage will help my peace of mind and sanity
 and mean I don't hose my machine and then sit there
 trying to remember "now, what did I change?"
+
+Does it work?
+-------------
+
+Well, the script itself works, yes. I'm not really a sysadmin
+or anything though so I am not sure of the best way to get this
+running. I figured /root/rc.local but that doesn't seem to work
+(although I can see an inotify process running). If you're a
+clever sausage, please be a dear and tell me what the best way
+of doing this is!
+
+- Gav
