@@ -11,7 +11,12 @@
 # To use this on a Debian based system, add the following
 # line to /etc/rc.local:
 #
-#  /root/auto-etc-keeper.sh &
+#  /root/track-changes/auto-etc-keeper.sh &
+#
+# (assuming you checked out to /root/track-changes)
+#
+# I have no idea if this is the "right" way to do this sort
+# of thing so all suggestions gratefully received!
 pushd /etc
 while inotifywait -e modify -e create -e delete /etc; do
     msg=`git status`
